@@ -9,3 +9,27 @@
 .section{
     height: 100vh;
 }
+
+.menu-list{
+    display: flex;
+    text-decoration: none;
+}
+
+.menu-list >li{
+
+}
+
+/* selecting multiple selectors and applying the same styling */
+:is(header, .menu-list){
+    display: flex;
+    justify-content: space-between;
+    margin-right: .2rem;
+
+    & img[alt="logo"]{
+        width: 5rem;
+    }
+
+    & li{
+        margin-inline: 1rem;
+    }
+}
